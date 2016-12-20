@@ -4,6 +4,8 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -15,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController {
+public class BoardController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -36,4 +38,12 @@ public class HomeController {
 		return "home";
 	}
 	
+
+	@RequestMapping(value = "/board", method = RequestMethod.GET)
+	public String board(Locale locale, Model model) {
+	System.out.println(org.springframework.core.SpringVersion.getVersion());
+		return "board";
+	}
+	
+
 }
