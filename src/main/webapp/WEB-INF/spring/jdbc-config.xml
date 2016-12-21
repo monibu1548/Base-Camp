@@ -11,7 +11,7 @@
             http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
             http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
- 
+
     <!-- MyBatis 맵퍼의 SQL 문장에 대한 파라미터 및 리턴 타입을 담을 클래스를 검색 할 패키지 지정 -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <property name="driverClass" value="#{jdbc['jdbc.driverClass']}"/>
@@ -19,18 +19,16 @@
         <property name="username" value="#{jdbc['jdbc.username']}"/>
         <property name="password" value="#{jdbc['jdbc.password']}"/>
     </bean>
-    
+
     <bean id="sqlSessionFactory"
         class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="mapperLocations" value="classpath:mybatis/sqlmaps/*.xml" />
     </bean>
-     
+ 
     <bean id="sqlSession"
         class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg  ref="sqlSessionFactory"></constructor-arg>
     </bean>
-     
-
-     
+ 
 </beans>
