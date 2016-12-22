@@ -1,0 +1,66 @@
+.writing-box {
+	border: 1px solid gray;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 400px;
+	background-color: white;
+}
+
+.name-tag {
+	height: 25px;
+	padding: 10px;
+	background-color: #4E394A;
+}
+
+.email-box {
+	float: left;
+	color: white;
+}
+
+.email-icon {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+#right-box {
+	float: right;
+}
+
+.modify-box {
+	margin-left: 10px;
+	padding: 4px;
+	float: right;
+	color: #CDCDCD;
+}
+
+.delete-box {
+	padding: 4px;
+	float: right;
+	color: #CDCDCD;
+}
+
+.main-text {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100px;
+	color: #444444;
+}
+
+.date-box {
+	text-align: right;
+	font-size: 12px;
+}
+
+.reg-date {
+	margin-right: 10px;
+}
+
+.mod-date {
+	margin-right: 10px;
+}
