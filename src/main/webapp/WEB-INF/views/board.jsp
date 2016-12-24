@@ -7,12 +7,13 @@
   <meta charset="utf-8">
   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
   <script   src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+  <script   src="${pageContext.request.contextPath}/resources/js/board.js"></script>
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/stylesheets/style.css">
 </head>
 <body style="background-color:#F2F2F2; margin:0px; padding:0px">
 
-<div style="background-color:#38A094; width:100%; height:50px; margin-bottom:40px; color:#EEEEEE">
+<div class="top-menu">
 	<div style="display:table-cell;vertical-align:middle; height:50px; font-size:30px">
 		<i class="fa fa-address-book" style="margin-left:20px;" aria-hidden="true"></i> Visitor's Book
 		<div style="float:right; margin-left:20px; font-size:15px; display:table-cell;vertical-align:middle; margin-top:7px; background-color:#FF90A8 ;padding:4px">
