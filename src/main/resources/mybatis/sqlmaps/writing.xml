@@ -5,8 +5,59 @@
     <select id="getWritingsList" resultType="io.github.monibu1548.Writing">
         SELECT
             id,
-            email
+            email,
+            text,
+            reg_date
         FROM
             writings
+        ORDER BY
+            reg_date DESC
     </select>
+
+    <select id="getWritingById" resultType="io.github.monibu1548.Writing">
+        SELECT
+            id,
+            email,
+            text,
+            reg_date,
+            mod_date
+        FROM
+            writings
+        WHERE
+            id=#{id}
+    </select>
+
+    <select id="getPwById" resultType="String">
+        SELECT
+            pw
+        FROM
+            writings
+        WHERE
+            id=#{id}
+    </select>
+
+    <update id="updateWritingById" parameterType="hashmap">
+        UPDATE
+            writings
+        SET
+            text = #{text},
+            mod_date = #{mod_date}
+        WHERE
+            id = #{id}
+    </update>
+
+    <insert id="addWriting" parameterType="hashmap">
+        INSERT INTO
+            writings(email, pw, text, reg_date, mod_date)
+        VALUES(#{email},#{pw},#{text},#{reg_date},#{reg_date})
+    </insert>
+
+    <delete id="deleteWritingById">
+        DELETE
+        FROM
+            writings
+        WHERE
+            id = #{id}
+    </delete>
+ 
 </mapper>
