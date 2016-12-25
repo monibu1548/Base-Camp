@@ -1,4 +1,4 @@
- $( document ).ready(function(){
+$( document ).ready(function(){
     var jbOffset = $( '.top-menu' ).offset();
     $( window ).scroll( function() {
       if ( $( document ).scrollTop() > jbOffset.top ) {
