@@ -1,0 +1,20 @@
+.write-dialog {
+	background-color: gray;
+	border: 1px solid gray;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 400px;
+}
+
+.dlg-div {
+	margin: 10px;
+}
+
+.dlg-header {
+	display: table-cell;
+	vertical-align: middle;
+	height: 30px;
+	
+}
