@@ -24,102 +24,33 @@
   
 <div class="container">
 
-	<div class="writing-box" align="center">
-		<div class="name-tag">
-			<div class="email-box"><i class="fa fa-envelope-o email-icon" aria-hidden="true"></i>email</div>
-			<div id='right-box'>
-				<div class="modify-box">
-					<a role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-				</div>
-				<div class="delete-box">
-					<a role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="main-text">
-			<p>본문</p>
-		</div>
-		<div class="date-box">
-			<div>
-				<p class="reg-date">작성일</p>
-				<p class="mod-date">수정일</p>
-			</div>
-		</div>
-	</div>
-	
-	<div class="writing-box" align="center">
-		<div class="name-tag">
-			<div class="email-box"><i class="fa fa-envelope-o email-icon" aria-hidden="true"></i>email</div>
-			<div id='right-box'>
-				<div class="modify-box">
-					<a role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-				</div>
-				<div class="delete-box">
-					<a role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="main-text">
-			<p>본문</p>
-		</div>
-		<div class="date-box">
-			<div>
-				<p class="reg-date">작성일</p>
-				<p class="mod-date">수정일</p>
-			</div>
-		</div>
-	</div>
-	
-	<div class="writing-box" align="center">
-		<div class="name-tag">
-			<div class="email-box"><i class="fa fa-envelope-o email-icon" aria-hidden="true"></i>email</div>
-			<div id='right-box'>
-				<div class="modify-box">
-					<a role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-				</div>
-				<div class="delete-box">
-					<a role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="main-text">
-			<p>본문</p>
-		</div>
-		<div class="date-box">
-			<div>
-				<p class="reg-date">작성일</p>
-				<p class="mod-date">수정일</p>
-			</div>
-		</div>
-	</div>
-	
-	<div class="writing-box" align="center">
-		<div class="name-tag">
-			<div class="email-box"><i class="fa fa-envelope-o email-icon" aria-hidden="true"></i>email</div>
-			<div id='right-box'>
-				<div class="modify-box">
-					<a role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
-				</div>
-				<div class="delete-box">
-					<a role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="main-text">
-			<p>본문</p>
-		</div>
-		<div class="date-box">
-			<div>
-				<p class="reg-date">작성일</p>
-				<p class="mod-date">수정일</p>
-			</div>
-		</div>
-	</div>
-	
+<script>
+document.write(showList());
+</script>
 
- 
-  
-  
+	<div class="writing-box" align="center">
+		<div class="name-tag">
+			<div class="email-box"><i class="fa fa-envelope-o email-icon" aria-hidden="true"></i>email</div>
+			<div id='right-box'>
+				<div class="modify-box">
+					<a role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
+				</div>
+				<div class="delete-box">
+					<a role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="main-text">
+			<p>본문</p>
+		</div>
+		<div class="date-box">
+			<div>
+				<p class="reg-date">작성일</p>
+				<p class="mod-date">수정일</p>
+			</div>
+		</div>
+	</div>
+
 </div>
 
 </body>
