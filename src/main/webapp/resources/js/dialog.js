@@ -1,11 +1,13 @@
 $(document).ready(function() {
-	$(function() {
-		$(".write-dialog").dialog({
-			autoOpen: false
-		});
-		$("#btn-write").on("click", function() {
-			$(".write-dialog").dialog("open");
-		});
+
+	$("#write-dialog").dialog({
+		autoOpen:false,
+        modal:false,
+        resizable:false,
+	});
+
+	$("#btn-write").on("click", function() {
+		$("#write-dialog").dialog("open");
 	});
 
 	$("#write-submit").click(function(e) {
@@ -26,4 +28,14 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#write-cancel").on("click", function() {
+		$("#dlg_email").val("");
+		$("#dlg_password").val("");
+		$("#dlg_text").val("");
+		$("#write-dialog").dialog("close");
+	});
+
+	$( window ).scroll( function() {
+		$("#write-dialog").dialog("close");
+	});
 });

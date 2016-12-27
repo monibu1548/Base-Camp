@@ -24,21 +24,24 @@
 	</div>
 </div>
 
-<div class="write-dialog" title="글쓰기">
+<div id="write-dialog">
 	<form action="" method="post">
 		<div class="dlg-div">
-			<label>이메일:</label>
+			<label>이  메  일  :</label>
 			<input id="dlg_email" name="email" type="text">
 		</div>
 		<div class="dlg-div">
-			<label>패스워드:</label>
+			<label>패스워드 :</label>
 			<input id="dlg_password" name="password" type="text">
 		</div>
 		<div class="dlg-div">
-			<label>내용:</label>
-			<input id="dlg_text" name="text" type="text"></br>
+			</br>
+			<input id="dlg_text" name="text" type="text" size="40" style="height:50px;"></br>
 		</div>
-		<input id="write-submit" type="button" value="Submit">
+		<div style="text-align:center; margin-bottom:10px">
+			<input id="write-submit" type="button" value="Save">
+			<input id="write-cancel" type="button" value="Cancel">
+		</div>
 	</form>
 </div>
 
