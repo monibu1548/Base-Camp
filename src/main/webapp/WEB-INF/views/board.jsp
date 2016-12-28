@@ -19,7 +19,7 @@
 	<div style="display:table-cell;vertical-align:middle; height:50px; font-size:30px">
 		<i class="fa fa-address-book" style="margin-left:20px;" aria-hidden="true"></i> Visitor's Book
 		<div style="float:right; margin-left:20px; font-size:15px; display:table-cell;vertical-align:middle; margin-top:7px; background-color:#FF90A8 ;padding:4px">
-			<a role="button" id="btn-write"><i class="fa fa-pencil" aria-hidden="true" style="margin-right:2px"></i>Write</a>
+			<a role="button" id="btn-write"><i class="fa fa-pencil" aria-hidden="true" style="margin-right:2px; cursor:pointer"></i>Write</a>
 		</div>
 	</div>
 </div>
@@ -45,6 +45,28 @@
 	</form>
 </div>
 
+<div class="pw-dialog" id="del-dialog">
+	<div title="Dialog Form">
+		<form action="" method="post">
+		<label>비밀번호</label>
+			<input id="del-pw" name="name" type="text">
+			<input id="del-submit" type="button" value="삭제">
+		</form>
+	</div>
+</div>
+
+<div class="pw-dialog" id="mod-dialog" >
+	<div title="Dialog Form">
+		<form action="" method="post">
+			<label>비밀번호</label>
+			<input id="mod-pw" name="name" type="text"></br>
+			<label>내용</label>
+			<input id="mod-text" name="name" type="text">
+			<input id="mod-submit" type="button" value="수정">
+		</form>
+	</div>
+</div>
+
 <div class="container">
 
 <script>
@@ -56,10 +78,20 @@ document.write(showList());
 			<div class="email-box"><i class="fa fa-envelope-o email-icon" aria-hidden="true"></i>email</div>
 			<div id='right-box'>
 				<div class="modify-box">
-					<a role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>
+					<script>
+						document.write('<a id="del_' + 3 + '" role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>');
+						$('#del_'+ 3).on("click", function(){
+							$('#del-dialog').data("id", 3).dialog("open");
+						});
+					</script>
 				</div>
 				<div class="delete-box">
-					<a role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>
+					<script>
+						document.write('<a id="mod_' + 3 + '" role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>');
+						$('#mod_'+ 3).on("click", function(){
+							$('#mod-dialog').data("id", 3).dialog("open");
+						});
+					</script>
 				</div>
 			</div>
 		</div>
