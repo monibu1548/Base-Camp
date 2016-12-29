@@ -15,12 +15,13 @@ mysql 5.1.31
 
 ```
 CREATE TABLE writings(
-		id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-		email VARCHAR(50) NOT NULL,
-		pw VARCHAR(50) NOT NULL,
-		text VARCHAR(300),
-		reg_date DATETIME NOT NULL,
-		mod_date DATETIME, PRIMARY KEY(id));
+id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+email VARCHAR(50) NOT NULL,
+pw VARCHAR(50) NOT NULL,
+text VARCHAR(300),
+reg_date DATETIME NOT NULL,
+mod_date DATETIME, PRIMARY KEY(id));
+>>>>>>> 829adaad5a40890ee529f023ab1f9ca1d46128ec
 ```
 
 ## 3. 실행
@@ -29,4 +30,3 @@ CREATE TABLE writings(
 mvn text
 http://localhost:8080/monibu1548/board
 ```
-
