@@ -1,6 +1,8 @@
 package io.github.monibu1548;
 
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,9 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.google.gson.Gson;
 
 @org.springframework.web.bind.annotation.RestController
-
 public class RestController {
-	
+
 	Gson gson = new Gson();
 	java.util.Date dt = new java.util.Date();
 	
@@ -40,6 +41,11 @@ public class RestController {
 		String pw = request.getParameter("pw");
 		String text = request.getParameter("text");
 
+		String regex = "^[_a-z0-9-]+(.[_a-z0-9-]+)*@(?:\\w+\\.)+\\w+$";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(email);
+		if(!m.matches()) return "FAIL";
+
 		java.text.SimpleDateFormat sdf = 
 		     new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -50,13 +56,14 @@ public class RestController {
 	
 	@RequestMapping(value="/api/writings/{id}", method=RequestMethod.PUT)
 	public String modifyVisitBook(@PathVariable(value = "id") int id, HttpServletRequest request){
-		
+
 		String inputPw = request.getParameter("pw");
 		String originPw = visitDao.getPwById(id);
 
+
 		if (inputPw.equals(originPw)){
 			String text = request.getParameter("text");
-			
+
 			java.text.SimpleDateFormat sdf = 
 				     new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
