@@ -1,5 +1,5 @@
 # NHN Enter. Base-Camp
-![Travis CI](https://travis-ci.org/monibu1548/Base-Camp.svg?branch=develop)
+![Travis CI](https://travis-ci.org/monibu1548/Base-Camp.svg?branch=master)
 ---
 
 ## 1. 개발환경
@@ -22,11 +22,4 @@ text VARCHAR(300),
 reg_date DATETIME NOT NULL,
 mod_date DATETIME, PRIMARY KEY(id));
 >>>>>>> 829adaad5a40890ee529f023ab1f9ca1d46128ec
-```
-
-## 3. 실행
-
-```
-mvn text
-http://localhost:8080/monibu1548/board
 ```
