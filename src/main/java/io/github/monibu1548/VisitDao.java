@@ -1,6 +1,5 @@
 package io.github.monibu1548;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public interface VisitDao {

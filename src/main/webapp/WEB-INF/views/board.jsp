@@ -73,39 +73,6 @@
 document.write(showList());
 </script>
 
-	<div class="writing-box" align="center">
-		<div class="name-tag">
-			<div class="email-box"><i class="fa fa-envelope-o email-icon" aria-hidden="true"></i>email</div>
-			<div id='right-box'>
-				<div class="modify-box">
-					<script>
-						document.write('<a id="del_' + 3 + '" role="button"><i class="fa fa-scissors" aria-hidden="true"></i></a>');
-						$('#del_'+ 3).on("click", function(){
-							$('#del-dialog').data("id", 3).dialog("open");
-						});
-					</script>
-				</div>
-				<div class="delete-box">
-					<script>
-						document.write('<a id="mod_' + 3 + '" role="button"><i class="fa fa-undo" aria-hidden="true"></i></a>');
-						$('#mod_'+ 3).on("click", function(){
-							$('#mod-dialog').data("id", 3).dialog("open");
-						});
-					</script>
-				</div>
-			</div>
-		</div>
-		<div class="main-text">
-			<p>본문</p>
-		</div>
-		<div class="date-box">
-			<div>
-				<p class="reg-date">작성일</p>
-				<p class="mod-date">수정일</p>
-			</div>
-		</div>
-	</div>
-
 </div>
 
 </body>

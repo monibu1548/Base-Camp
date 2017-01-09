@@ -1,6 +1,5 @@
 package io.github.monibu1548;
 
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 

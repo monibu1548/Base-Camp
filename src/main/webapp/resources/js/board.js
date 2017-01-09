@@ -60,6 +60,8 @@ function delWriting(jsonData){
 			} else {
 				alert("패스워드가 틀립니다");
 			}
+			$('#del-pw').val("");
+			$('#del-text').val("");
 		},
 	});
 }
@@ -116,6 +118,7 @@ function jsonToView(json){
 	doc += '<script>';
 	doc += '$("#del_' + id + '").on("click", function(){';
 	doc += '$("#del-dialog").data("id", '+ id +').dialog("open");';
+	doc += '$("#del-pw").val("");';
 	doc += '});';
 	doc += '</script>';
 	doc += '</div>';
@@ -124,6 +127,8 @@ function jsonToView(json){
 	doc += '<script>';
 	doc += '$("#mod_' + id + '").on("click", function(){';
 	doc += '$("#mod-dialog").data("id", '+ id +').dialog("open");';
+	doc += '$("#mod-pw").val("");';
+	doc += '$("#mod-text").val("");';
 	doc += '});';
 	doc += '</script>';
 	doc += '</div>';

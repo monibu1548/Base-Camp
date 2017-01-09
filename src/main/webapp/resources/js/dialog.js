@@ -30,6 +30,7 @@ $(document).ready(function() {
 	});
 
 	$("#mod-submit").on("click", function() {
+		
 		var id = $("#mod-dialog").data('id');
 		var pw = $("#mod-pw").val();
 		var text = $('#mod-text').val();
@@ -45,10 +46,15 @@ $(document).ready(function() {
 			modWriting(json);
 		}
 
+		$("#mod-pw").val("");
+		$("#mod-text").val("");
 		$("#mod-dialog").dialog("close");
 	});
 
 	$("#btn-write").on("click", function() {
+		$("#dlg_email").val("");
+		$("#dlg_password").val("");
+		$("#dlg_text").val("");
 		$("#write-dialog").dialog("open");
 	});
 

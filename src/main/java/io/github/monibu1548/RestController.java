@@ -49,7 +49,7 @@ public class RestController {
 		java.text.SimpleDateFormat sdf = 
 		     new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-		String reg_time = sdf.format(dt);
+		String reg_time = sdf.format(dt = new java.util.Date());
 		visitDao.addWriting(email, pw, text, reg_time);
 		return "OK";
 	}
@@ -67,7 +67,7 @@ public class RestController {
 			java.text.SimpleDateFormat sdf = 
 				     new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-			String mod_time = sdf.format(dt);
+			String mod_time = sdf.format(dt = new java.util.Date());
 
 			visitDao.updateWritingById(id, text, mod_time);
 
